@@ -2,3 +2,15 @@ a {
   text-decoration: none;
   color: black;
 }
+
+#contact-box input {
+  margin: 15px 0;
+}
+
+.display {
+  display: initial;
+}
+
+.non-display {
+  display: none;
+}

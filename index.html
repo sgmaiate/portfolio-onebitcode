@@ -26,7 +26,7 @@
               width="112"
               height="28"
             />
-          </a>
+          
 
           <a
             role="button"
@@ -34,6 +34,7 @@
             aria-label="menu"
             aria-expanded="false"
             data-target="navbarBasicExample"
+            onclick="changeWindow()"
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -45,7 +46,6 @@
           <div class="navbar-start">
             <a onclick="displayInformations()" class="navbar-item"> Inicio </a>
             <a onclick="displayContact()" class="navbar-item">Contato</a>
-            <a onclick="displayKnowledge()" class="navbar-item">Conhecimentos</a>
             <a onclick="displayProjects()" class="navbar-item">Projetos</a>
           </div>
         </div>
@@ -53,7 +53,73 @@
     </header>
     <section class="container">
       <section class="section columns">
-        <div class="column is-4">
+        <div id="projects" class="columns container">
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/images/projects/Unbank.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Unbank</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>Neste Projeto eu aprendi mais sobre trabalho em equipe e responsividade.</p>
+                  <p><b>HTML, CSS e JS</b></p>
+                  <a href="https://sgmaiate.github.io/Unbank-login-page/" target="_blank"><button class="button is-danger">Acesse</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/images/projects/timer.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Timer</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>Neste Projeto eu aprendi sobre setTimeout e setInterval, Manipulação de DOM e aprimorei a minha lógica.</p>
+                  <p><b>HTML, CSS e JS</b></p>
+                  <a href="https://sgmaiate.github.io/Timer/" target="_blank"><button class="button is-danger">Acesse</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column is-4">
+            <div class="card">
+              <div class="card-image">
+                <figure class="image is-4by3">
+                  <img src="./assets/images/projects/Jokenpo.jpg" alt="Placeholder image">
+                </figure>
+              </div>
+              <div class="card-content">
+                <div class="media">
+                  <div class="media-content">
+                    <p class="title is-4">Jokenpo</p>
+                  </div>
+                </div>
+                <div class="content">
+                  <p>Este foi um dos meus primeiros projetos, onde eu estava aprendendo manipulação de DOM</p>
+                  <p><b>HTML, CSS e JS</b></p>
+                  <a href="https://sgmaiate.github.io/WEB-Jokenpo/" target="_blank"><button class="button is-danger">Acesse</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div></div>
+        <div id="profile-card" class="column is-4">
           <div class="card">
             <div class="card-image">
               <figure class="image is-4by3">
@@ -102,10 +168,8 @@
             <h3 class="subtitle"><b>Sobre mim</b></h3>
             <hr />
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi
-              quia quidem molestiae quisquam labore ipsa blanditiis modi
-              laudantium saepe aliquam sapiente tempora, dolore tempore
-              distinctio numquam debitis laboriosam corporis cum.
+              Meu nome é Sandro Guilherme, sou estudante de programação há menos de um ano.
+              Sou apaixonado por técnologia desde que me conheço por gente, e poder contribuir com ela, para mim é um grande prazer.
             </p>
           </div>
           <div class="box">
@@ -120,12 +184,11 @@
                   <b>Atendente de Tele-atendimento </b
                   ><span class="is-dark tag">Credit Cash</span>
                 </h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                  iure vero beatae, cum nisi ex consequuntur aliquam error magni
-                  totam odit consequatur, est laboriosam sapiente iste modi
-                  cupiditate numquam doloribus.
-                </p>
+                <ul>
+                  <li>- Abordagem ativa com clientes do banco de dados da empresa.</li>
+                  <li>- Realização da Cobrança.</li>
+                  <li>- Negociação com o cliente de dívidas abertas no seu nome.</li>
+                </ul>
               </div>
             </div>
             <hr />
@@ -139,10 +202,10 @@
                   ><span class="is-dark tag">Atlas Soft TI</span>
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint
-                  iure vero beatae, cum nisi ex consequuntur aliquam error magni
-                  totam odit consequatur, est laboriosam sapiente iste modi
-                  cupiditate numquam doloribus.
+                  <ul>
+                    <li>- Suporte ao Sistema e Operacional.</li>
+                    <li>- Manutenção e Configuração de micros: Suporte e instalação á sistemas operacionais e manutenção de hardware, software e rede</li>
+                  </ul>
                 </p>
               </div>
             </div>
@@ -168,9 +231,10 @@
             </div>
           </div>
         </section>
-        </div>
+      </div>
       </section>
     </section>
+  </div>
     <section>
       <main></main>
     </section>

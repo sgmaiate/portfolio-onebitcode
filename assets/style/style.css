@@ -14,3 +14,13 @@ a {
 .non-display {
   display: none;
 }
+#projects {
+  position: absolute;
+  z-index: 3;
+  text-align: center;
+  display: none;
+  flex-wrap: wrap;
+}
+.button {
+  margin-top: 20px;
+}
